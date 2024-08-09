@@ -1,56 +1,97 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+*
+{
+   margin: 0px;
+   padding: 0px; 
+   box-sizing: border-box;
 }
-html,body{
+html,
+body{
     height: 100%;
     width: 100%;
 }
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.container{
-    height: 500px;
-    width: 500px;
-    background-color:darkgreen;
-
+nav{
+    padding: 20px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    /*
+    justify-content: space-around;
+    box-shadow: 5px 5px 15px;
+}
+.nav-tools > ul{
     display: flex;
-    align-content: center;
-    flex-wrap: wrap;
-    gap: 20px 40px;
-    justify-content: center;*/
+    gap: 20px;
+    text-transform: uppercase;
+    font-family: sans-serif;
 }
-.box{
-    height: 70px;
-    width: 70px;
-    background-color:blue;
-    border-radius: 10px;
-    border: 1px solid black;
-    font-size: 30px;
+.enquire-btn > button,.btn-container >button{
+    background: rgb(241,250,30);
+    background: linear-gradient(90deg, rgba(241,250,30,1)
+     16%, rgba(249,136,6,0.9528186274509804) 49%,
+      rgba(247,75,36,1) 99%);
+    padding: 15px 25px;
+    border-radius: 30px;
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 500px;
+}
+img{
+    height: 100px;
+}
+li{
+    list-style:none;
+}
+select{
+    border: none;
+    font-size:16px;
+    text-transform: uppercase;
+    color: gray;
+    background: transparent;
+}
+select:hover{
+     color:navy;
+}
+li:hover{
+    color: navy;
+}
+/*-------------*/
+main{
+    padding: 50px;
+    min-height: 400px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    order: 0;
 }
-#b3{
-    background-color: orangered;
-    order: 1;
-    align-self: flex-end;
+form{
+    border-radius: 15px;
+    background: #ffffff;
+    box-shadow:  2px 2px 50px lightblue,
+             -20px -20px 50px #ffffff;
+    width: 360px;
+    height: 400px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
 }
-#b4{
-    background-color: white;
-    order: -1;
-    align-self: flex-end;
-}
-#b2{
-    align-self: flex-start;
+.input-container{
+
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    justify-content: center;
+    gap: 10px;
 
 }
+  .btn-container{
+    display: flex;
+    justify-content: center;
+    
+  }
+  button{
+    padding: 10px 15px;
+    
+ }
 
+ input{
+    padding: 10px;
+ }
